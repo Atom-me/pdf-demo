@@ -21,12 +21,8 @@ import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.element.Table;
 import com.itextpdf.layout.element.Text;
 import com.itextpdf.layout.properties.UnitValue;
-import com.itextpdf.pdfcleanup.PdfCleaner;
-import com.itextpdf.pdfcleanup.autosweep.CompositeCleanupStrategy;
-import com.itextpdf.pdfcleanup.autosweep.RegexBasedCleanupStrategy;
 
 import java.io.IOException;
-import java.net.MalformedURLException;
 
 /**
  * @author Atom
@@ -41,8 +37,8 @@ public class EditExistingPDFDemo {
 
     private static void addContentToDocument(PdfDocument pdfDocument) throws IOException {
 
+//        Adding a Form
         //使用系统本地字体，可以解决生成的pdf中无法显示中文问题，本处字体为阿里巴巴普惠体-R
-        //在创建字体时直接使用即可解决中文问题
         PdfFont sysFont = PdfFontFactory.createFont("font/Alibaba-PuHuiTi-Regular.otf", PdfEncodings.IDENTITY_H);
 
         PdfFormField personal = PdfFormField.createEmptyField(pdfDocument);
@@ -52,25 +48,27 @@ public class EditExistingPDFDemo {
         PdfAcroForm.getAcroForm(pdfDocument, true)
                 .addField(personal, pdfDocument.getFirstPage());
 
+
+//        Adding a New Page
         pdfDocument.addNewPage(1);
 
+
+//        Adding an Annotation
         PdfAnnotation ann = new PdfTextAnnotation(new Rectangle(40, 435, 0, 0)).setTitle(new PdfString("name"))
                 .setContents("Your name");
         pdfDocument.getPage(2)
                 .addAnnotation(ann);
 
 
+//        Adding an Image
         Document document = new Document(pdfDocument);
-        // add layout elements
-//        document.close();
-
-
         ImageData imageData = ImageDataFactory.create("itext7-demo/src/main/resources/image/yuanshitianzun.png");
-        Image image = new Image(imageData).scaleAbsolute(550,100)
+        Image image = new Image(imageData).scaleAbsolute(550, 100)
                 .setFixedPosition(1, 10, 50);
         document.add(image);
 
 
+//        Adding a Paragraph
         Text title = new Text("This is a demo").setFontSize(16);
         Text author = new Text("atom tutorials.");
         Paragraph p = new Paragraph()
@@ -82,17 +80,13 @@ public class EditExistingPDFDemo {
         document.add(p);
 
 
+//        Adding a Table
         Table table = new Table(UnitValue.createPercentArray(2));
         table.addHeaderCell("#");
         table.addHeaderCell("company");
         table.addCell("name");
         table.addCell("atom");
         document.add(table);
-
-//        CompositeCleanupStrategy strategy = new CompositeCleanupStrategy();
-//        strategy.add(new RegexBasedCleanupStrategy("atom"));
-//        PdfCleaner.autoSweepCleanUp(pdfDocument, strategy);
-
 
         document.close();
         pdfDocument.close();
