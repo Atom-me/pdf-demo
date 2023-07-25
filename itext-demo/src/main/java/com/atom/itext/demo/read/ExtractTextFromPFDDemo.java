@@ -6,6 +6,8 @@ import com.itextpdf.text.pdf.parser.PdfTextExtractor;
 import java.io.IOException;
 
 /**
+ * 读取PDF文件中的文本内容
+ *
  * @author Atom
  */
 public class ExtractTextFromPFDDemo {
