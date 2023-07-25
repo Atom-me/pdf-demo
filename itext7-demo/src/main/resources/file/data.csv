@@ -1,2 +1,51 @@
-name;abbr;capital;most populous city;population;square miles;time zone 1;time zone 2;DST
-ALABAMA;AL;montgomery;birmingham;4708708;52423;CST(UTC-6);EST(UTC-5);YES
+name;abbr;capital;most populous city;population;square miles;time zone 1;time zone 2;dst
+Alabama;AL;Montgomery;Birmingham;4908621;52420;Central Time Zone;Eastern Time Zone;Yes
+Alaska;AK;Juneau;Anchorage;734002;663267;Alaska Time Zone;Hawaii-Aleutian Time Zone;No
+Arizona;AZ;Phoenix;Phoenix;7378494;113990;Mountain Time Zone;Pacific Time Zone;Yes
+Arkansas;AR;Little Rock;Little Rock;3038999;53179;Central Time Zone;Eastern Time Zone;Yes
+California;CA;Sacramento;Los Angeles;39937489;163695;Pacific Time Zone;Alaska Time Zone;Yes
+Colorado;CO;Denver;Denver;5845526;104094;Mountain Time Zone;Pacific Time Zone;Yes
+Connecticut;CT;Hartford;Bridgeport;3563077;5544;Eastern Time Zone; ;Yes
+Delaware;DE;Dover;Wilmington;982895;2489;Eastern Time Zone; ;Yes
+Florida;FL;Tallahassee;Jacksonville;21992985;65755;Eastern Time Zone;Central Time Zone;Yes
+Georgia;GA;Atlanta;Atlanta;10736059;59425;Eastern Time Zone; ;Yes
+Hawaii;HI;Honolulu;Honolulu;1415872;10931;Hawaii-Aleutian Time Zone; ;No
+Idaho;ID;Boise;Boise;1826156;83569;Mountain Time Zone;Pacific Time Zone;Yes
+Illinois;IL;Springfield;Chicago;12659682;57914;Central Time Zone; ;Yes
+Indiana;IN;Indianapolis;Indianapolis;6745354;36418;Eastern Time Zone;Central Time Zone;Yes
+Iowa;IA;Des Moines;Des Moines;3179849;55857;Central Time Zone; ;Yes
+Kansas;KS;Topeka;Wichita;2910357;82278;Central Time Zone;Mountain Time Zone;Yes
+Kentucky;KY;Frankfort;Louisville;4499692;40407;Eastern Time Zone;Central Time Zone;Yes
+Louisiana;LA;Baton Rouge;New Orleans;4645184;52378;Central Time Zone;Eastern Time Zone;Yes
+Maine;ME;Augusta;Portland;1362359;35380;Eastern Time Zone; ;Yes
+Maryland;MD;Annapolis;Baltimore;6177224;12406;Eastern Time Zone; ;Yes
+Massachusetts;MA;Boston;Boston;7029917;10554;Eastern Time Zone; ;Yes
+Michigan;MI;Lansing;Detroit;10077331;96714;Eastern Time Zone;Central Time Zone;Yes
+Minnesota;MN;St. Paul;Minneapolis;5706494;86936;Central Time Zone; ;Yes
+Mississippi;MS;Jackson;Jackson;2963914;48434;Central Time Zone;Eastern Time Zone;Yes
+Missouri;MO;Jefferson City;Kansas City;6154913;69707;Central Time Zone;Mountain Time Zone;Yes
+Montana;MT;Helena;Billings;1085407;147040;Mountain Time Zone;Pacific Time Zone;Yes
+Nebraska;NE;Lincoln;Omaha;1952570;77358;Central Time Zone;Mountain Time Zone;Yes
+Nevada;NV;Carson City;Las Vegas;3139658;110572;Pacific Time Zone; ;Yes
+New Hampshire;NH;Concord;Manchester;1371246;9349;Eastern Time Zone; ;Yes
+New Jersey;NJ;Trenton;Newark;9288994;8722;Eastern Time Zone; ;Yes
+New Mexico;NM;Santa Fe;Albuquerque;2117522;121590;Mountain Time Zone; ;Yes
+New York;NY;Albany;New York City;20215751;54555;Eastern Time Zone; ;Yes
+North Carolina;NC;Raleigh;Charlotte;10453948;53819;Eastern Time Zone; ;Yes
+North Dakota;ND;Bismarck;Fargo;779094;70763;Central Time Zone;Mountain Time Zone;Yes
+Ohio;OH;Columbus;Columbus;11799448;44826;Eastern Time Zone; ;Yes
+Oklahoma;OK;Oklahoma City;Oklahoma City;3953821;69899;Central Time Zone;Mountain Time Zone;Yes
+Oregon;OR;Salem;Portland;4301089;98381;Pacific Time Zone; ;Yes
+Pennsylvania;PA;Harrisburg;Philadelphia;12823989;46058;Eastern Time Zone; ;Yes
+Rhode Island;RI;Providence;Providence;1098166;1545;Eastern Time Zone; ;Yes
+South Carolina;SC;Columbia;Charleston;5148714;32020;Eastern Time Zone; ;Yes
+South Dakota;SD;Pierre;Sioux Falls;884659;77116;Central Time Zone;Mountain Time Zone;Yes
+Tennessee;TN;Nashville;Memphis;6897576;42144;Central Time Zone;Eastern Time Zone;Yes
+Texas;TX;Austin;Houston;29145505;268596;Central Time Zone;Mountain Time Zone;Yes
+Utah;UT;Salt Lake City;Salt Lake City;3271616;84897;Mountain Time Zone; ;Yes
+Vermont;VT;Montpelier;Burlington;628061;9616;Eastern Time Zone; ;Yes
+Virginia;VA;Richmond;Virginia Beach;8626207;42775;Eastern Time Zone; ;Yes
+Washington;WA;Olympia;Seattle;7693612;71362;Pacific Time Zone; ;Yes
+West Virginia;WV;Charleston;Charleston;1804291;24231;Eastern Time Zone; ;Yes
+Wisconsin;WI;Madison;Milwaukee;5851754;65498;Central Time Zone; ;Yes
+Wyoming;WY;Cheyenne;Cheyenne;567025;97813;Mountain Time Zone; ;Yes
