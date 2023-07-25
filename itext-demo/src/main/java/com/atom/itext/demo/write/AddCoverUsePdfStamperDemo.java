@@ -1,4 +1,4 @@
-package com.atom.itext.demo;
+package com.atom.itext.demo.write;
 
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.pdf.PdfContentByte;

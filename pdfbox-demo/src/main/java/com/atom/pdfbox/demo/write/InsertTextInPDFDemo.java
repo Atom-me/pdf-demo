@@ -1,4 +1,4 @@
-package com.atom.pdfbox.demo;
+package com.atom.pdfbox.demo.write;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
