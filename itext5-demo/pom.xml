@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.atom</groupId>
-	<artifactId>itext-demo</artifactId>
+	<artifactId>itext5-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>itext-demo</name>
-	<description>itext-demo</description>
+	<name>itext5-demo</name>
+	<description>itext5-demo</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
