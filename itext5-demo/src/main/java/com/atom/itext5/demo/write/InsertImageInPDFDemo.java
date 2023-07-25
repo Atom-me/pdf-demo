@@ -1,9 +1,8 @@
-package com.atom.itext.demo.write;
+package com.atom.itext5.demo.write;
 
 import com.itextpdf.text.*;
 import com.itextpdf.text.pdf.PdfWriter;
 
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URISyntaxException;

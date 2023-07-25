@@ -1,4 +1,4 @@
-package com.atom.itext.demo.read;
+package com.atom.itext5.demo.read;
 
 import com.itextpdf.text.pdf.PdfReader;
 import com.itextpdf.text.pdf.parser.PdfTextExtractor;
