@@ -89,7 +89,6 @@ public class EditExistingPDFDemo {
         table.addCell("atom");
         document.add(table);
 
-//
 //        CompositeCleanupStrategy strategy = new CompositeCleanupStrategy();
 //        strategy.add(new RegexBasedCleanupStrategy("atom"));
 //        PdfCleaner.autoSweepCleanUp(pdfDocument, strategy);

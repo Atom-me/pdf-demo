@@ -65,6 +65,7 @@
             <artifactId>html2pdf</artifactId>
             <version>4.0.5</version>
         </dependency>
+        <!-- pdfSweep -->
         <dependency>
             <groupId>com.itextpdf</groupId>
             <artifactId>cleanup</artifactId>
