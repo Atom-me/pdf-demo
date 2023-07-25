@@ -20,7 +20,7 @@ import java.io.IOException;
 public class InsertListInPDFDemo {
     public static void main(String[] args) throws IOException {
 
-        //使用系统本地字体，可以解决生成的pdf中无法显示中文问题，本处字体为宋体
+        //使用系统本地字体，可以解决生成的pdf中无法显示中文问题，本处字体为阿里巴巴普惠体-R
         //在创建字体时直接使用即可解决中文问题
         PdfFont sysFont = PdfFontFactory.createFont("font/Alibaba-PuHuiTi-Regular.otf", PdfEncodings.IDENTITY_H);
 
