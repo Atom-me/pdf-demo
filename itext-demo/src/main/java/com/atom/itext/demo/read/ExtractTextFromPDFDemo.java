@@ -10,7 +10,7 @@ import java.io.IOException;
  *
  * @author Atom
  */
-public class ExtractTextFromPFDDemo {
+public class ExtractTextFromPDFDemo {
     public static void main(String[] args) throws IOException {
         PdfReader reader = new PdfReader("sample.pdf");
         int pages = reader.getNumberOfPages();
