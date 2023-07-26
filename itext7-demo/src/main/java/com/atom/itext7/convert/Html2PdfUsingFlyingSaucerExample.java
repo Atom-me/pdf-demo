@@ -1,8 +1,12 @@
 package com.atom.itext7.convert;
 
+import com.itextpdf.text.pdf.BaseFont;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.xhtmlrenderer.layout.SharedContext;
+import org.xhtmlrenderer.pdf.ITextFontResolver;
 import org.xhtmlrenderer.pdf.ITextRenderer;
 
 import java.io.File;
@@ -18,6 +22,8 @@ import java.io.OutputStream;
 public class Html2PdfUsingFlyingSaucerExample {
     private static final String HTML_INPUT = "./itext7-demo/src/main/resources/html.html";
     private static final String PDF_OUTPUT = "./itext7-demo/html.pdf";
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(Html2PdfUsingFlyingSaucerExample.class);
 
     public static void main(String[] args) {
         try {
@@ -50,6 +56,15 @@ public class Html2PdfUsingFlyingSaucerExample {
             sharedContext.setInteractive(false);
             sharedContext.setReplacedElementFactory(new CustomElementFactoryImpl());
             renderer.setDocumentFromString(xhtml.html());
+
+            renderer.getSharedContext().getTextRenderer().setSmoothingThreshold(0);
+
+
+            LOGGER.info("html content is [{}]", xhtml.html());
+
+            //todo 中文不显示问题处理
+
+
             renderer.layout();
             renderer.createPDF(outputStream);
         }

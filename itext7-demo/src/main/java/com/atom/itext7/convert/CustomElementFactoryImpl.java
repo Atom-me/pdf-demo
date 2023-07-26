@@ -1,6 +1,6 @@
 package com.atom.itext7.convert;
 
-import com.lowagie.text.Image;
+import com.itextpdf.text.Image;
 import org.apache.commons.io.IOUtils;
 import org.w3c.dom.Element;
 import org.xhtmlrenderer.extend.FSImage;
