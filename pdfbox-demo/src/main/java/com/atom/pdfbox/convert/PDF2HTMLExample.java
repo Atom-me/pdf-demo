@@ -8,6 +8,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.Writer;
+import java.nio.charset.StandardCharsets;
 
 /**
  *
@@ -28,7 +29,7 @@ public class PDF2HTMLExample {
     private static void generateHTMLFromPDF(String filename) throws ParserConfigurationException, IOException {
         PDDocument pdf = PDDocument.load(new File(filename));
         PDFDomTree parser = new PDFDomTree();
-        Writer output = new PrintWriter("./pdfbox-demo/pdf.html", "utf-8");
+        Writer output = new PrintWriter("./pdfbox-demo/pdf.html", StandardCharsets.UTF_8);
         parser.writeText(pdf, output);
         output.close();
         if (pdf != null) {
