@@ -25,13 +25,13 @@ public class InsertImageInPDFDemo {
         PdfFont sysFont = PdfFontFactory.createFont("font/Alibaba-PuHuiTi-Regular.otf", PdfEncodings.IDENTITY_H);
 
         //创建基础模块
-        PdfWriter writer = new PdfWriter("/Users/atom/work/workspace/pdf-demo/itext7-demo/image.pdf");
+        PdfWriter writer = new PdfWriter("./itext7-demo/image.pdf");
         PdfDocument pdf = new PdfDocument(writer);
         //document就是我们的pdf对象
         Document document = new Document(pdf);
         //生成图片对象
-        Image image = new Image(ImageDataFactory.create("/Users/atom/work/workspace/pdf-demo/itext7-demo/src/main/resources/image/yuanshitianzun.png"), 200, 400, 200);
-        Image image1 = new Image(ImageDataFactory.create("itext7-demo/src/main/resources/image/yuanshitianzun.png")).setHeight(50);
+        Image image = new Image(ImageDataFactory.create("./itext7-demo/src/main/resources/image/yuanshitianzun.png"), 200, 400, 200);
+        Image image1 = new Image(ImageDataFactory.create("./itext7-demo/src/main/resources/image/yuanshitianzun.png")).setHeight(50);
         Paragraph paragraph = new Paragraph("图片输出测试元始天尊： ").setFont(sysFont)
                 .add(image)
                 .add(image1);

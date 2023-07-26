@@ -28,7 +28,7 @@ public class InsertTableInPDFDemo {
     private static final Color LINE_COLOR = new DeviceRgb(204, 204, 204);
 
     public static void main(String[] args) throws IOException {
-        PdfWriter writer = new PdfWriter("/Users/atom/work/workspace/pdf-demo/itext7-demo/sampleTablePDF.pdf");
+        PdfWriter writer = new PdfWriter("./itext7-demo/sampleTablePDF.pdf");
         PdfDocument pdf = new PdfDocument(writer);
         // 设置页面大小，rotate（）表示页面横向
         Document document = new Document(pdf, PageSize.A4.rotate());
@@ -42,7 +42,7 @@ public class InsertTableInPDFDemo {
         // 表的宽度相对于页面的可用宽度，在这种情况下，表将使用100% 的页面宽度，减去页边距。
         table.setWidth(UnitValue.createPercentValue(100));
         // 接下来的操作是通过读取一个csv文件里的内容填充到pdf的表格上
-        try (BufferedReader br = new BufferedReader(new FileReader("/Users/atom/work/workspace/pdf-demo/itext7-demo/src/main/resources/file/data.csv"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("./itext7-demo/src/main/resources/file/data.csv"))) {
             String line = br.readLine();
             // process ()方法，使用特定的字体将行添加到表中，并定义行是否包含标题行的内容。
             process(table, line, bold, true);
