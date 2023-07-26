@@ -25,10 +25,10 @@ public class AddCoverUsePdfCopyDemo {
      * @throws DocumentException
      */
     public static void main(String[] args) throws IOException, DocumentException {
-        PdfReader cover = new PdfReader("hero.pdf");
-        PdfReader reader = new PdfReader("pages.pdf");
+        PdfReader cover = new PdfReader("./itext5-demo/src/main/resources/hero.pdf");
+        PdfReader reader = new PdfReader("./itext5-demo/src/main/resources/pages.pdf");
         Document document = new Document();
-        PdfCopy copy = new PdfCopy(document, new FileOutputStream("pages_with_cover.pdf"));
+        PdfCopy copy = new PdfCopy(document, new FileOutputStream("./itext5-demo/src/main/resources/pages_with_cover.pdf"));
         document.open();
         copy.addDocument(cover);
         copy.addDocument(reader);
