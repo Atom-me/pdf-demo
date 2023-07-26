@@ -29,7 +29,7 @@ public class AddCoverUsePdfStamperDemo {
     public static void main(String[] args) throws IOException, DocumentException {
         PdfReader cover = new PdfReader("./itext5-demo/src/main/resources/hero.pdf");
         PdfReader reader = new PdfReader("./itext5-demo/src/main/resources/pages.pdf");
-        PdfStamper stamper = new PdfStamper(reader, new FileOutputStream("./itext5-demo/src/main/cover_with_pages.pdf"));
+        PdfStamper stamper = new PdfStamper(reader, new FileOutputStream("./itext5-demo/cover_with_pages.pdf"));
 
         stamper.insertPage(1, cover.getPageSizeWithRotation(1));
         PdfContentByte page1 = stamper.getOverContent(1);
