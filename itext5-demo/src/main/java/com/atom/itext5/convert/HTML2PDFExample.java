@@ -15,11 +15,11 @@ import java.io.IOException;
  */
 public class HTML2PDFExample {
 
-    private static final String HTML = "/Users/atom/work/workspace/pdf-demo/itext5-demo/src/main/resources/html.html";
+    private static final String SOURCE_HTML = "./itext5-demo/src/main/resources/html.html";
 
     public static void main(String[] args) {
         try {
-            generatePDFFromHTML(HTML);
+            generatePDFFromHTML(SOURCE_HTML);
         } catch (IOException | ParserConfigurationException | DocumentException e) {
             e.printStackTrace();
         }
@@ -27,7 +27,7 @@ public class HTML2PDFExample {
 
     private static void generatePDFFromHTML(String filename) throws ParserConfigurationException, IOException, DocumentException {
         Document document = new Document();
-        PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream("html.pdf"));
+        PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream("./itext5-demo/html.pdf"));
         document.open();
         XMLWorkerHelper.getInstance().parseXHtml(writer, document, new FileInputStream(filename));
         document.close();
