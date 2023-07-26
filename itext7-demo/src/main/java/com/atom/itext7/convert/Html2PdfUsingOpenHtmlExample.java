@@ -13,6 +13,7 @@ import java.nio.file.FileSystems;
 
 /**
  * 使用 openhtmltopdf-pdfbox 转换HTML 至 PDF
+ * openhtmltopdf-pdfbox 内置了 pdfbox
  */
 public class Html2PdfUsingOpenHtmlExample {
 
