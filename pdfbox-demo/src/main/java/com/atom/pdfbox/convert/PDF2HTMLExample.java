@@ -26,8 +26,8 @@ public class PDF2HTMLExample {
         }
     }
 
-    private static void generateHTMLFromPDF(String filename) throws ParserConfigurationException, IOException {
-        PDDocument pdf = PDDocument.load(new File(filename));
+    private static void generateHTMLFromPDF(String fileName) throws ParserConfigurationException, IOException {
+        PDDocument pdf = PDDocument.load(new File(fileName));
         PDFDomTree parser = new PDFDomTree();
         Writer output = new PrintWriter("./pdfbox-demo/pdf.html", StandardCharsets.UTF_8);
         parser.writeText(pdf, output);
