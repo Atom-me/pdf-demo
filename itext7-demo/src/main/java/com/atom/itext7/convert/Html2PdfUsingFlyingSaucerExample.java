@@ -1,12 +1,10 @@
 package com.atom.itext7.convert;
 
-import com.itextpdf.text.pdf.BaseFont;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.xhtmlrenderer.layout.SharedContext;
-import org.xhtmlrenderer.pdf.ITextFontResolver;
 import org.xhtmlrenderer.pdf.ITextRenderer;
 
 import java.io.File;
@@ -56,9 +54,6 @@ public class Html2PdfUsingFlyingSaucerExample {
             sharedContext.setInteractive(false);
             sharedContext.setReplacedElementFactory(new CustomElementFactoryImpl());
             renderer.setDocumentFromString(xhtml.html());
-
-            renderer.getSharedContext().getTextRenderer().setSmoothingThreshold(0);
-
 
             LOGGER.info("html content is [{}]", xhtml.html());
 

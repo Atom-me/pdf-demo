@@ -65,18 +65,18 @@
             <artifactId>html2pdf</artifactId>
             <version>4.0.5</version>
         </dependency>
-<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.xhtmlrenderer/flying-saucer-pdf &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>org.xhtmlrenderer</groupId>-->
-<!--            <artifactId>flying-saucer-pdf</artifactId>-->
-<!--            <version>9.1.22</version>-->
-<!--        </dependency>-->
-        <!-- https://mvnrepository.com/artifact/org.xhtmlrenderer/flying-saucer-pdf-itext5 -->
+        <!-- https://mvnrepository.com/artifact/org.xhtmlrenderer/flying-saucer-pdf -->
         <dependency>
             <groupId>org.xhtmlrenderer</groupId>
-            <artifactId>flying-saucer-pdf-itext5</artifactId>
+            <artifactId>flying-saucer-pdf</artifactId>
             <version>9.1.22</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.xhtmlrenderer/flying-saucer-pdf-itext5 -->
+<!--        <dependency>-->
+<!--            <groupId>org.xhtmlrenderer</groupId>-->
+<!--            <artifactId>flying-saucer-pdf-itext5</artifactId>-->
+<!--            <version>9.1.22</version>-->
+<!--        </dependency>-->
 
 
         <!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
