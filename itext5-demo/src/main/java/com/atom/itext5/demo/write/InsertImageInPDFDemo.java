@@ -19,7 +19,7 @@ public class InsertImageInPDFDemo {
         Path path = Paths.get(ClassLoader.getSystemResource("demo001.png").toURI());
 
         Document document = new Document();
-        PdfWriter.getInstance(document, new FileOutputStream("iTextImageExample.pdf"));
+        PdfWriter.getInstance(document, new FileOutputStream("./itext5-demo/iTextImageExample.pdf"));
         document.open();
         Image img = Image.getInstance(path.toAbsolutePath().toString());
         document.add(img);

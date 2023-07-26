@@ -14,7 +14,7 @@ import java.io.FileOutputStream;
 public class InsertTextInPDFDemo {
     public static void main(String[] args) throws FileNotFoundException, DocumentException {
         Document document = new Document();
-        PdfWriter.getInstance(document, new FileOutputStream("iTextHelloWorld.pdf"));
+        PdfWriter.getInstance(document, new FileOutputStream("./itext5-demo/iTextHelloWorld.pdf"));
 
         document.open();
         Font font = FontFactory.getFont(FontFactory.COURIER, 16, BaseColor.BLACK);
