@@ -11,6 +11,15 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /**
+ * 使用XMLWorkerHelper 老版本的转换工具
+ * 使用XMLWorkerHelper 转换
+ * iText’s XML Worker, which is built on top of iText Core's foundation,
+ * can convert XHTML content to PDF and can also process other file types to HTML as an intermediary step.
+ * <p>
+ * <p>
+ * Convert XHTML content to PDF, used with iText 5 (an EOL product).
+ * Use pdfHTML for iText Core, the latest HTML to PDF conversion tool.
+ *
  * @author Atom
  */
 public class HTML2PDFExample {

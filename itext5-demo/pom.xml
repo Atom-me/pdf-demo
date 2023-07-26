@@ -44,6 +44,12 @@
 			<artifactId>xmlworker</artifactId>
 			<version>5.5.13.3</version>
 		</dependency>
+		<dependency>
+			<groupId>com.itextpdf</groupId>
+			<artifactId>html2pdf</artifactId>
+			<version>4.0.5</version>
+			<scope>compile</scope>
+		</dependency>
 
 
 		<!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
@@ -66,7 +72,8 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
+
+    </dependencies>
 
 	<build>
 		<plugins>
