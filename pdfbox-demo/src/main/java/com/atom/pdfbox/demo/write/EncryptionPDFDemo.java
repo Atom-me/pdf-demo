@@ -41,7 +41,7 @@ public class EncryptionPDFDemo {
         StandardProtectionPolicy standardProtectionPolicy
                 = new StandardProtectionPolicy("ownerpass", "userpass", accessPermission);
         document.protect(standardProtectionPolicy);
-        document.save("pdfBoxEncryption.pdf");
+        document.save("./pdfbox-demo/pdfBoxEncryption.pdf");
         document.close();
 
     }

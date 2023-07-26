@@ -42,7 +42,7 @@ public class InsertTextInPDFDemo {
         contentStream.endText();
 
         contentStream.close();
-        document.save("pdfBoxHelloWorld.pdf");
+        document.save("./pdfbox-demo/pdfBoxHelloWorld.pdf");
         document.close();
 
     }

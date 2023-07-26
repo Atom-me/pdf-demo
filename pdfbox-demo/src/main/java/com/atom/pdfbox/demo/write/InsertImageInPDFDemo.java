@@ -27,7 +27,7 @@ public class InsertImageInPDFDemo {
         contentStream.drawImage(image, 80, 80);
         contentStream.close();
 
-        document.save("pdfBoxImage.pdf");
+        document.save("./pdfbox-demo/pdfBoxImage.pdf");
         document.close();
 
     }
