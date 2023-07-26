@@ -29,14 +29,13 @@ import java.io.IOException;
  */
 public class EditExistingPDFDemo {
     public static void main(String[] args) throws IOException {
-        PdfReader reader = new PdfReader("/Users/atom/work/workspace/pdf-demo/itext7-demo/existingPDF4Edit.pdf");
-        PdfWriter writer = new PdfWriter("/Users/atom/work/workspace/pdf-demo/itext7-demo/existingPDF4Edit-modified.pdf");
+        PdfReader reader = new PdfReader("./itext7-demo/src/main/resources/existingPDF4Edit.pdf");
+        PdfWriter writer = new PdfWriter("./itext7-demo/existingPDF4Edit-modified.pdf");
         PdfDocument pdfDocument = new PdfDocument(reader, writer);
         addContentToDocument(pdfDocument);
     }
 
     private static void addContentToDocument(PdfDocument pdfDocument) throws IOException {
-
 //        Adding a Form
         //使用系统本地字体，可以解决生成的pdf中无法显示中文问题，本处字体为阿里巴巴普惠体-R
         PdfFont sysFont = PdfFontFactory.createFont("font/Alibaba-PuHuiTi-Regular.otf", PdfEncodings.IDENTITY_H);
@@ -48,10 +47,8 @@ public class EditExistingPDFDemo {
         PdfAcroForm.getAcroForm(pdfDocument, true)
                 .addField(personal, pdfDocument.getFirstPage());
 
-
 //        Adding a New Page
         pdfDocument.addNewPage(1);
-
 
 //        Adding an Annotation
         PdfAnnotation ann = new PdfTextAnnotation(new Rectangle(40, 435, 0, 0)).setTitle(new PdfString("name"))
@@ -59,14 +56,12 @@ public class EditExistingPDFDemo {
         pdfDocument.getPage(2)
                 .addAnnotation(ann);
 
-
 //        Adding an Image
         Document document = new Document(pdfDocument);
-        ImageData imageData = ImageDataFactory.create("itext7-demo/src/main/resources/image/yuanshitianzun.png");
+        ImageData imageData = ImageDataFactory.create("./itext7-demo/src/main/resources/image/yuanshitianzun.png");
         Image image = new Image(imageData).scaleAbsolute(550, 100)
                 .setFixedPosition(1, 10, 50);
         document.add(image);
-
 
 //        Adding a Paragraph
         Text title = new Text("This is a demo").setFontSize(16);
@@ -78,7 +73,6 @@ public class EditExistingPDFDemo {
                 .add(" from ")
                 .add(author);
         document.add(p);
-
 
 //        Adding a Table
         Table table = new Table(UnitValue.createPercentArray(2));
