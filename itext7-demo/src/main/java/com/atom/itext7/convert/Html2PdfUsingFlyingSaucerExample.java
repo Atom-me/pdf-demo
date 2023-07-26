@@ -15,13 +15,13 @@ import java.io.OutputStream;
  *
  * @author Atom
  */
-public class Html2PdfUsingFlyingSaucer {
+public class Html2PdfUsingFlyingSaucerExample {
     private static final String HTML_INPUT = "./itext7-demo/src/main/resources/html.html";
     private static final String PDF_OUTPUT = "./itext7-demo/html.pdf";
 
     public static void main(String[] args) {
         try {
-            Html2PdfUsingFlyingSaucer htmlToPdf = new Html2PdfUsingFlyingSaucer();
+            Html2PdfUsingFlyingSaucerExample htmlToPdf = new Html2PdfUsingFlyingSaucerExample();
             htmlToPdf.generateHtmlToPdf();
         } catch (Exception e) {
             e.printStackTrace();
