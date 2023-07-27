@@ -52,7 +52,7 @@ public class EditExistingPDFDemo {
 
 //        Adding an Annotation
         PdfAnnotation ann = new PdfTextAnnotation(new Rectangle(40, 435, 0, 0)).setTitle(new PdfString("name"))
-                .setContents("Your name");
+                .setContents("Your name气象局");
         pdfDocument.getPage(2)
                 .addAnnotation(ann);
 
@@ -64,7 +64,7 @@ public class EditExistingPDFDemo {
         document.add(image);
 
 //        Adding a Paragraph
-        Text title = new Text("This is a demo").setFontSize(16);
+        Text title = new Text("This is a demo示例").setFontSize(16);
         Text author = new Text("atom tutorials.");
         Paragraph p = new Paragraph()
                 .setFont(sysFont)
