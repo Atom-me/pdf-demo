@@ -6,7 +6,10 @@ import com.itextpdf.io.font.PdfEncodings;
 import com.itextpdf.layout.font.FontProvider;
 import com.itextpdf.layout.font.FontSet;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 /**
  * @author Atom
@@ -21,7 +24,10 @@ public class Html2PdfExample {
         //字体设置，解决中文不显示问题
         FontSet fontSet = new FontSet();
         // 加载自定义字体
-        fontSet.addFont(Html2PdfExample.class.getClassLoader().getResource("font/Alibaba-PuHuiTi-Regular.otf").getPath(),
+        fontSet.addFont(Html2PdfExample.class.
+                        getClassLoader().
+                        getResource("font/Alibaba-PuHuiTi-Regular.otf")
+                        .getPath(),
                 PdfEncodings.IDENTITY_H);
         FontProvider fontProvider = new FontProvider(fontSet);
         converterProperties.setFontProvider(fontProvider);
