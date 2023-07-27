@@ -20,7 +20,7 @@ public class HTML2PDFExample2 {
     public static void main(String[] args) throws IOException {
         // IO
         File htmlSource = new File("./itext5-demo/src/main/resources/html.html");
-        File pdfDest = new File("./itext5-demo/html.pdf");
+        File pdfDest = new File("./itext5-demo/output/html.pdf");
         // pdfHTML specific code
         ConverterProperties converterProperties = new ConverterProperties();
         HtmlConverter.convertToPdf(new FileInputStream(htmlSource), new FileOutputStream(pdfDest), converterProperties);

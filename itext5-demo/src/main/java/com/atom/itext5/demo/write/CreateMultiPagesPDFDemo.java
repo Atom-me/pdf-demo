@@ -19,7 +19,7 @@ public class CreateMultiPagesPDFDemo {
         //创建文档
         Document document = new Document(PageSize.A4, 36, 36, 36, 36);
 
-        String sourcePdfFilePath = "./itext5-demo/MultiPages.pdf";
+        String sourcePdfFilePath = "./itext5-demo/output/MultiPages.pdf";
         OutputStream fos = new FileOutputStream(sourcePdfFilePath);
         //创建PdfWriter
         PdfWriter pdfWriter = PdfWriter.getInstance(document, fos);

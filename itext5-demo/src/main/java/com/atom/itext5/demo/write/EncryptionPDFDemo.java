@@ -20,7 +20,7 @@ import java.io.IOException;
 public class EncryptionPDFDemo {
     public static void main(String[] args) throws IOException, DocumentException {
         PdfReader pdfReader = new PdfReader("./itext5-demo/src/main/resources/iTextHelloWorld4Encryption.pdf");
-        PdfStamper pdfStamper = new PdfStamper(pdfReader, new FileOutputStream("./itext5-demo/encryptedITextHelloWorld.pdf"));
+        PdfStamper pdfStamper = new PdfStamper(pdfReader, new FileOutputStream("./itext5-demo/output/encryptedITextHelloWorld.pdf"));
 
         /**
          * we encrypted the file with two passwords:

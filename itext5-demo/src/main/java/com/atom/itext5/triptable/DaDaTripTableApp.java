@@ -18,7 +18,7 @@ public class DaDaTripTableApp {
 
         List<BaseTripInfo> baseTripInfos = getBaseTripInfos();
 
-        try (OutputStream outputStream = new FileOutputStream("dada-trip-Table.pdf")) {
+        try (OutputStream outputStream = new FileOutputStream("./itext5-demo/output/dada-trip-Table.pdf")) {
             PDFUtil.generateDaDaTripTable(date, phone, baseTripInfos, outputStream);
         } catch (IOException e) {
             e.printStackTrace();

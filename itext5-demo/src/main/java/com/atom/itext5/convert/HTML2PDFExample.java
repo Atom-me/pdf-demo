@@ -36,7 +36,7 @@ public class HTML2PDFExample {
 
     private static void generatePDFFromHTML(String filename) throws ParserConfigurationException, IOException, DocumentException {
         Document document = new Document();
-        PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream("./itext5-demo/html.pdf"));
+        PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream("./itext5-demo/output/html.pdf"));
         document.open();
         XMLWorkerHelper.getInstance().parseXHtml(writer, document, new FileInputStream(filename));
         document.close();

@@ -20,7 +20,7 @@ import java.util.stream.Stream;
 public class InsertTableInPDFDemo {
     public static void main(String[] args) throws IOException, DocumentException, URISyntaxException {
         Document document = new Document();
-        PdfWriter.getInstance(document, new FileOutputStream("./itext5-demo/iTextTable.pdf"));
+        PdfWriter.getInstance(document, new FileOutputStream("./itext5-demo/output/iTextTable.pdf"));
 
         document.open();
 

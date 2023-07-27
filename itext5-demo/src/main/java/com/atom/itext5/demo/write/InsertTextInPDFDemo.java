@@ -16,12 +16,12 @@ import java.io.IOException;
 public class InsertTextInPDFDemo {
     public static void main(String[] args) throws IOException, DocumentException {
         Document document = new Document();
-        PdfWriter.getInstance(document, new FileOutputStream("./itext5-demo/iTextHelloWorld.pdf"));
+        PdfWriter.getInstance(document, new FileOutputStream("./itext5-demo/output/iTextHelloWorld.pdf"));
         document.open();
 
-        //英文字体
+        //英文字体，中文不显示
         Font font1 = FontFactory.getFont(FontFactory.COURIER, 16, BaseColor.BLACK);
-        Chunk chunk = new Chunk("Hello World~~", font1);
+        Chunk chunk = new Chunk("Hello World~~哈哈哈哈哈", font1);
         document.add(chunk);
 
 
