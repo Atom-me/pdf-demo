@@ -51,8 +51,9 @@ public class EditExistingPDFDemo {
         pdfDocument.addNewPage(1);
 
 //        Adding an Annotation
-        PdfAnnotation ann = new PdfTextAnnotation(new Rectangle(40, 435, 0, 0)).setTitle(new PdfString("name"))
-                .setContents("Your name气象局");
+        PdfAnnotation ann = new PdfTextAnnotation(new Rectangle(40, 435, 0, 0))
+                .setTitle(new PdfString("name"))
+                .setContents("Your name 气象局");
         pdfDocument.getPage(2)
                 .addAnnotation(ann);
 
@@ -68,7 +69,7 @@ public class EditExistingPDFDemo {
         Text author = new Text("atom tutorials.");
         Paragraph p = new Paragraph()
                 .setFont(sysFont)
-                .setFontSize(8)
+                .setFontSize(12)
                 .add(title)
                 .add(" from ")
                 .add(author);
