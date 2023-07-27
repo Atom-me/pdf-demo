@@ -19,7 +19,7 @@ import java.io.OutputStream;
  */
 public class Html2PdfUsingFlyingSaucerExample {
     private static final String HTML_INPUT = "./itext7-demo/src/main/resources/html.html";
-    private static final String PDF_OUTPUT = "./itext7-demo/html.pdf";
+    private static final String PDF_OUTPUT = "./itext7-demo/output/html.pdf";
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Html2PdfUsingFlyingSaucerExample.class);
 

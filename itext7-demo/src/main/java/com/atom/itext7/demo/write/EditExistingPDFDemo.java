@@ -30,7 +30,7 @@ import java.io.IOException;
 public class EditExistingPDFDemo {
     public static void main(String[] args) throws IOException {
         PdfReader reader = new PdfReader("./itext7-demo/src/main/resources/existingPDF4Edit.pdf");
-        PdfWriter writer = new PdfWriter("./itext7-demo/existingPDF4Edit-modified.pdf");
+        PdfWriter writer = new PdfWriter("./itext7-demo/output/existingPDF4Edit-modified.pdf");
         PdfDocument pdfDocument = new PdfDocument(reader, writer);
         addContentToDocument(pdfDocument);
     }

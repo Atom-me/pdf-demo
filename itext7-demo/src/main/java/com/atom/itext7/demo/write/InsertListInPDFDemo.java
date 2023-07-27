@@ -25,7 +25,7 @@ public class InsertListInPDFDemo {
         PdfFont sysFont = PdfFontFactory.createFont("font/Alibaba-PuHuiTi-Regular.otf", PdfEncodings.IDENTITY_H);
 
         //带路径的文件名
-        PdfWriter writer = new PdfWriter("./itext7-demo/itext7SampleList.pdf");
+        PdfWriter writer = new PdfWriter("./itext7-demo/output/itext7SampleList.pdf");
         PdfDocument pdf = new PdfDocument(writer);
         Document document = new Document(pdf);
         document.add(new Paragraph("iText7 list:").setFont(sysFont));

@@ -23,7 +23,7 @@ public class InsertTextInPDFDemo {
         PdfFont sysFont = PdfFontFactory.createFont("font/Alibaba-PuHuiTi-Regular.otf", PdfEncodings.IDENTITY_H);
 
         //带路径的文件名
-        PdfWriter writer = new PdfWriter("./itext7-demo/itext7SampleText.pdf");
+        PdfWriter writer = new PdfWriter("./itext7-demo/output/itext7SampleText.pdf");
         PdfDocument pdf = new PdfDocument(writer);
         Document document = new Document(pdf);
         document.add(new Paragraph("Hello World! 中文测试").setFont(sysFont));

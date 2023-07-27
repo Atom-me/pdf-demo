@@ -28,7 +28,7 @@ public class InsertTableInPDFDemo {
     private static final Color LINE_COLOR = new DeviceRgb(204, 204, 204);
 
     public static void main(String[] args) throws IOException {
-        PdfWriter writer = new PdfWriter("./itext7-demo/sampleTablePDF.pdf");
+        PdfWriter writer = new PdfWriter("./itext7-demo/output/sampleTablePDF.pdf");
         PdfDocument pdf = new PdfDocument(writer);
         // 设置页面大小，rotate（）表示页面横向
         Document document = new Document(pdf, PageSize.A4.rotate());

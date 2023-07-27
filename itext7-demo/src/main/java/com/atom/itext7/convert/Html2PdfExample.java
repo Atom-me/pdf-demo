@@ -8,11 +8,11 @@ import java.io.*;
 /**
  * @author Atom
  */
-public class HTML2PDFExample {
+public class Html2PdfExample {
     public static void main(String[] args) throws IOException {
         // IO
         File htmlSource = new File("./itext7-demo/src/main/resources/html.html");
-        File pdfDest = new File("./itext7-demo/html.pdf");
+        File pdfDest = new File("./itext7-demo/output/html.pdf");
         // pdfHTML specific code
         ConverterProperties converterProperties = new ConverterProperties();
         HtmlConverter.convertToPdf(new FileInputStream(htmlSource), new FileOutputStream(pdfDest), converterProperties);

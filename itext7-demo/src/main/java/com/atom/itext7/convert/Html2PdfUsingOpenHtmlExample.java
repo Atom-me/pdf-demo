@@ -18,7 +18,7 @@ import java.nio.file.FileSystems;
 public class Html2PdfUsingOpenHtmlExample {
 
     private static final String HTML_INPUT = "./itext7-demo/src/main/resources/html.html";
-    private static final String PDF_OUTPUT = "./itext7-demo/html.pdf";
+    private static final String PDF_OUTPUT = "./itext7-demo/output/html.pdf";
 
 
     public static void main(String[] args) {

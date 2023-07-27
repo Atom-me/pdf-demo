@@ -25,7 +25,7 @@ public class InsertImageInPDFDemo {
         PdfFont sysFont = PdfFontFactory.createFont("font/Alibaba-PuHuiTi-Regular.otf", PdfEncodings.IDENTITY_H);
 
         //创建基础模块
-        PdfWriter writer = new PdfWriter("./itext7-demo/image.pdf");
+        PdfWriter writer = new PdfWriter("./itext7-demo/output/image.pdf");
         PdfDocument pdf = new PdfDocument(writer);
         //document就是我们的pdf对象
         Document document = new Document(pdf);

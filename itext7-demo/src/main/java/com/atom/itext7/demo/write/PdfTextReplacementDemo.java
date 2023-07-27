@@ -22,7 +22,7 @@ import java.io.IOException;
 public class PdfTextReplacementDemo {
 
     private static final String SOURCE = "./itext7-demo/src/main/resources/pdf4replacement.pdf";
-    private static final String DESTINATION = "./itext7-demo/pdf4replacement-result.pdf";
+    private static final String DESTINATION = "./itext7-demo/output/pdf4replacement-result.pdf";
 
     public static void main(String[] args) throws IOException {
         PdfReader reader = new PdfReader(SOURCE);
