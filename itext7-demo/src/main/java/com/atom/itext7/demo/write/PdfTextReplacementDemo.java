@@ -19,7 +19,7 @@ import java.io.IOException;
 /**
  * 文字清理覆盖，添加遮罩
  */
-public class PdfTextReplacement {
+public class PdfTextReplacementDemo {
 
     private static final String SOURCE = "./itext7-demo/src/main/resources/pdf4replacement.pdf";
     private static final String DESTINATION = "./itext7-demo/pdf4replacement-result.pdf";
