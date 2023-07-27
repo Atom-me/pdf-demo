@@ -21,7 +21,8 @@ public class Html2PdfExample {
         //字体设置，解决中文不显示问题
         FontSet fontSet = new FontSet();
         // 加载自定义字体
-        fontSet.addFont(Html2PdfExample.class.getClassLoader().getResource("font/Alibaba-PuHuiTi-Regular.otf").getPath(), PdfEncodings.IDENTITY_H);
+        fontSet.addFont(Html2PdfExample.class.getClassLoader().getResource("font/Alibaba-PuHuiTi-Regular.otf").getPath(),
+                PdfEncodings.IDENTITY_H);
         FontProvider fontProvider = new FontProvider(fontSet);
         converterProperties.setFontProvider(fontProvider);
         HtmlConverter.convertToPdf(new FileInputStream(htmlSource), new FileOutputStream(pdfDest), converterProperties);
